@@ -1,8 +1,44 @@
+/* Base styles for larger screens (e.g., laptops) */
+#profile {
+  height: 85vh;
+  margin-bottom: 5rem;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#contact,
+#projects {
+  height: auto;
+  padding: 3rem 0;
+}
+
+.section__pic-container {
+  width: 300px;
+  height: 300px;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.section__text__p2 {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* For screens with a max width of 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -10,6 +46,7 @@
   #contact,
   #projects {
     height: fit-content;
+    padding: 2.5rem 0;
   }
 }
 
@@ -38,8 +75,8 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto 2rem;
   }
   .about-containers {
@@ -47,18 +84,59 @@
   }
 }
 
+/* For screens with a max width of 768px (Tablet-friendly) */
+@media screen and (max-width: 768px) {
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 1.5rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+    margin: 0 4%;
+  }
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+  }
+  .about-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .section__text__p2,
+  .experience-sub-title {
+    font-size: 1.4rem;
+  }
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+}
+
 /* For screens with a max width of 600px (Mobile-friendly) */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: auto;
+    padding: 1.5rem 0;
   }
   #profile {
-    height: 83vh;
+    height: 80vh;
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
+    line-height: 1.5;
   }
   footer nav {
     height: fit-content;
@@ -71,6 +149,7 @@
   }
   .contact-info-container {
     margin: 0;
+    padding: 0 1rem;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -89,7 +168,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 45vw;
     justify-content: center;
   }
   .section__text__p2 {
@@ -100,6 +179,7 @@
   }
   .text-container {
     text-align: justify;
+    padding: 0 1rem;
   }
 }
 
@@ -113,7 +193,7 @@
     height: 50vw;
   }
   .section__text__p2 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .experience-sub-title {
     font-size: 1.1rem;
@@ -123,10 +203,20 @@
   }
   article {
     font-size: 0.9rem;
+    line-height: 1.4;
   }
   footer,
   #contact {
     height: auto;
     padding: 1rem 0;
+  }
+  .text-container {
+    padding: 0 0.5rem;
+  }
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+  .nav-links {
+    gap: 0.3rem;
   }
 }
