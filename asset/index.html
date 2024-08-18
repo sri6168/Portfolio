@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dagdhar Srivallika</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dagdhar Srivallika</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">ertifications</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./about.png" alt="sri profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dagdhar Srivallika</h1>
+        <p class="section__text__p2">passionate cyber security student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/srivallika-dagdhar-a7999724a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'"
+          />
+          <img
+            src="./github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sri6168'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./profile.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img 
+              src="./experience.png"
+              alt="Experience icon"
+              class="icon"
+              />
+              <h3>SKILLS</h3>
+              <P><b>Networking</b><br><b>SQL</b></b><br><b>Front End:</b> Python,C <br><b>Back End:</b> HTML,CSS <br><b>Operating System:</b> Windows,Linux</P>
+            </div>
+            <div class="details-container">
+              <img
+                src="./education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><b>School :</b>S.T. Anne's High School (SSC)<br><b> Intermediate: </b>I Class CDR jr College <br /><b>B Tech:</b> Hyderabad Institute Of Technology and Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a passionate student of Cyber Security. I am driven by curiosity and a desire to learn and grow in this industry.
+              I want to develop a oundation in cyber security field, which I am eager to apply in real-world scenarios.
+              My goal is to leverage my skills and enthusiasm to make a meaningful impact in the industry. 
+              Apart from this i also have interest in travelling and love to explore and learn about new things . 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications">
+      <h1 class="title">Certifications</h1>
+      <div class="certifications-container">
+        <div class="certification-box">
+          <img src="./shield.png" alt="1st icon" class="icon" />
+          <h3>CISCO INTRODUCTION TO CYBER SECURITY</h3>
+          <p>It explores cyber trends, threats—along with the broader topic of cybersecurity in a way that will matter.</p>
+        </div>
+        <div class="certification-box">
+          <img src="./ethical.png" alt="2nd icon" class="icon" />
+          <h3>CISCO ETHICAL HACKING</h3>
+          <p>This course is designed to prepare you with an Ethical Hacker skillset and give you a solid understanding of offensive security.</p>
+        </div>
+        <div class="certification-box">
+          <img src="./ccna.png" alt="3rd icon" class="icon" />
+          <h3>CCNA 200-301 Network Fundamentals Course</h3>
+          <p>This course will help us gain an understanding of networking fundamentals and learn the basics of how to configure secure routers and switches.</p>
+        </div>
+        <div class="certification-box">
+          <img src="./google cyber.png" alt="4th icon" class="icon" />
+          <h3>Google Cybersecurity Professional Certificate</h3>
+          <p>Understand the importance of cybersecurity practices and their impact for organizations. Identify common risks, threats, and vulnerabilities, as well as techniques to mitigate them.</p>
+        </div>
+      </div>
+    </section>
+    
+      <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h2 class="title"><b> My Projects</b></h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./calci.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Matrix Calculator</h3>
+            <p>A matrix Calculator is a type of software that is used to solve linear equations and matrix operations .</p>
+            <div class="btn-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./phishing.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Email & SMS Phishing Detection</h3>
+            <p>This project is used to detect if the email or sms is fake or true sms/email with some inbuilt statements </p>
+            <div class="btn-container">
+        
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./stimulator.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pentration Testing Stimulation</h3>
+              <p>As cyber security is rapid increasing domain , this project will help us to know how a attack can happen as it stimulates the attack.</p>
+            <div class="btn-container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">srivallikadagdhar@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/srivallika-dagdhar-a7999724a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./checkmark.png"
+          alt="phone icon"
+          class="icon number-icon"/>
+          <p><a herf="+91 9948489004">+91 9948489004</a></p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
